@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li .task-name {
+    flex-grow: 1;
+}
+
+li .task-date {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #555;
+    text-align: right;
+    white-space: nowrap;
+}
+
+li .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li .delete-btn i {
+    font-size: 16px;
+}
+
+li .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.search-bar input {
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+li.editing input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+.search-highlight {
+    background-color: yellow;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.task-form input[type="text"] {
+    flex: 2;
+}
+
+.task-form input[type="date"] {
+    flex: 1;
+}
+
+.task-form button {
+    flex: 1;
+}
